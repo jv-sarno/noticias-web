@@ -1,0 +1,151 @@
+body {
+    font: x-small arial, helvetica, freesans, sans-serif;
+}
+.title-method h1 {
+    color: #333;
+    font-size: 3.8em;
+    font-weight: 700;
+    letter-spacing: -.06em;
+}
+.title-method h2 {
+    color: #929292;
+    font-size: 1.7em;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1.2em;
+    padding-top: .3em;
+}
+hr.h-sep{
+    border-top: 1px solid #EBEBEB;
+    overflow: hidden;
+    padding-top: 16px;
+    width: 100%;
+}
+h3.title-section{
+    font-size: 19px;
+}
+p{
+    color: #333;
+    font-size: 1.7em;
+    letter-spacing: -.02em;
+    line-height: 1.45em;
+    padding-bottom: 1.5em;
+}
+.depoiment , .about-product, .testemonial{
+    text-align: justify;
+}
+.testemonial{
+    background-color: #eeeded;
+    padding: 30px;
+}
+.testemonial p{
+    padding-bottom: 0 !important;
+}
+.testemonial p strong{
+    font-size: 21px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+.notes{
+    text-align: justify;
+}
+.notes p{
+    font-size: 12px;
+    font-family: Tahoma;
+    line-height: 1.45em;
+    padding-bottom: 0 !important;
+}
+.notes p strong{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Tahoma;
+    padding-bottom: 10px;
+}
+.sidebar .sidebar-promotion{
+    border: 1px solid #ececec;
+    padding: 10px;
+}
+.sidebar .promotion{
+    background-color: yellow;
+    border: 2px solid yellow;
+    margin: 10px;
+    padding: 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+.sidebar .promotion:hover{
+    background-color: transparent;
+    border: 2px solid yellow;
+    color: yellow !important;
+    font-weight: bold;
+    font-family: Helvetica;
+}
+.sidebar .promotion a{
+    color: #333333;
+    text-decoration: none;
+}
+.counter{
+    color: #333;
+    background-color: #ffd54f;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+.counter h5{
+    font-size: 18px;
+}
+.counter h6{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.counter li{
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+.counter li span {
+    display: block;
+    font-size: 4.5rem;
+}
+@media (min-width: 320px) and (max-width: 768px){
+    .counter li{
+        font-size: 0.5em;
+    }
+    .counter li span {
+        font-size: 3rem;
+    }
+    .counter ul{
+        padding-left: 0;
+    }
+}
+
+/*reasons*/
+
+.reasons-title h1{
+    font: bold 20px Georgia;
+}
+.reasons-title h2{
+    font: lighter 14px Georgia;
+    color: #989798;
+}
+.reasons-title h2 strong{
+    font-weight: bold;
+}
+.evaluate{
+    text-align: justify;
+}
+.evaluate p{
+    padding: 0 40px;
+}
+.evaluate h6{
+    font: bolder 18px Georgia;
+    padding-bottom: 10px;
+}
+.comparative p strong{
+    font-weight: bold;
+}
