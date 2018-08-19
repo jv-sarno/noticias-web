@@ -1,20 +1,28 @@
-var second = 1000,
-  minute = second * 60,
-  hour = minute * 60,
-  day = hour * 24;
+(function () {
+  stickySidebar();
+  initCouponCounter('#couponCounter');
+  initCouponCounter('#couponCounter2');
+})();
 
-var now = new Date();
-now.setHours(now.getHours()+5);
-now.setMinutes(now.getMinutes()+43);
+function stickySidebar() {
+  new StickySidebar('#sidebar', {
+    topSpacing: 20,
+    bottomSpacing: 20
+  });
+}
 
-var countDown = now.getTime(),
-  x = setInterval(function() {
+function initCouponCounter(selector) {
+  var element = document.querySelector(selector);
+  var initialNumber = parseInt(element.innerText);
+  var finalNumber = 7;
 
-    var now = new Date().getTime(),
-      distance = countDown - now;
+  window[selector] = setInterval(function () {
+    initialNumber--;
 
-      document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-      document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-      document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+    element.innerText = initialNumber.toString();
 
-  }, second)
+    if (initialNumber === finalNumber) {
+      clearInterval(window[selector]);
+    }
+  }, 1000 * 60);
+}
